@@ -153,7 +153,7 @@ export default {
         _this.loading = true;
         
 
-        this.axios.get('/api/songlist', {
+        this.axios.get('https://mq.api.superboyjack.cn/song/url', {
             // vue项目使用 /api/songlist
             // 打包到electron使用  https://mq.api.superboyjack.cn/songlist
             params: {
@@ -291,7 +291,7 @@ export default {
     download(order){
         // console.log(order);
         var _this = this;
-        this.axios.get('/api/song/url', {
+        this.axios.get('https://mq.api.superboyjack.cn/song/url', {
             // /api/song/url
             // https://mq.api.superboyjack.cn/song/url
             params: {
@@ -383,7 +383,7 @@ export default {
     // 以下是播放相关方法
     getAudioUrl(mid){
         var _this = this;
-        this.axios.get('/api/song/urls', {
+        this.axios.get('https://mq.api.superboyjack.cn/song/urls', {
             // /api/song/urls
             // https://mq.api.superboyjack.cn/song/urls
             params: {
