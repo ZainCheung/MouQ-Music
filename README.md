@@ -1,4 +1,4 @@
-# hello-vue
+# MouQ-Music
 
 ## Project setup
 ```
