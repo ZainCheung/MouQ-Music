@@ -155,7 +155,7 @@ export default {
 
         this.axios.get('/api/songlist', {
             // vue项目使用 /api/songlist
-            // 打包到electron使用  https://api.qq.jsososo.com/songlist
+            // 打包到electron使用  https://mq.api.superboyjack.cn/songlist
             params: {
                 id: this.playlistid
             }
@@ -293,7 +293,7 @@ export default {
         var _this = this;
         this.axios.get('/api/song/url', {
             // /api/song/url
-            // https://api.qq.jsososo.com/song/url
+            // https://mq.api.superboyjack.cn/song/url
             params: {
                 id: this.tablesonglist[order].mid,
                 type: this.tablesonglist[order].type
@@ -385,7 +385,7 @@ export default {
         var _this = this;
         this.axios.get('/api/song/urls', {
             // /api/song/urls
-            // https://api.qq.jsososo.com/song/urls
+            // https://mq.api.superboyjack.cn/song/urls
             params: {
                 id: mid
             }

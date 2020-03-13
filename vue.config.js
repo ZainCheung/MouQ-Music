@@ -5,7 +5,7 @@ module.exports = {
   devServer: {
       proxy: {
         '/api': {
-          target: 'https://api.qq.jsososo.com/',
+          target: 'https://mq.api.superboyjack.cn/',
 		  // https://api.qq.jsososo.com/
           ws: true,
           changeOrigin: true,
