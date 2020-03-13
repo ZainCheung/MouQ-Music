@@ -153,7 +153,7 @@ export default {
         _this.loading = true;
         
 
-        this.axios.get('https://mq.api.superboyjack.cn/song/url', {
+        this.axios.get('https://mq.api.superboyjack.cn/songlist', {
             // vue项目使用 /api/songlist
             // 打包到electron使用  https://mq.api.superboyjack.cn/songlist
             params: {
