@@ -314,7 +314,7 @@ export default {
                 var url = response.data.data;
                 if(index != -1){
                     // 代理内网,打包到electron时时要注释下面这行
-                    url = "/download/" + url.slice(index+5,url.length);
+                    // url = "/download/" + url.slice(index+5,url.length);
                     _this.downloadFile (url,name,type);
                 }
             }else{
