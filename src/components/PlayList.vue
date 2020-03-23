@@ -40,9 +40,10 @@
       </el-col>
     </el-card>
     <template>
+      <!-- @row-click="rowClick" -->  
       <el-table 
           :data="tablesonglist" 
-          @row-click="rowClick" 
+          
           @row-dblclick="rowClick" 
           @cell-mouse-enter="mouseEnter" 
           @cell-mouse-leave="mouseLeave" 
@@ -441,7 +442,7 @@ export default {
         })
         .then(function (response) {
             // console.log(response.data.data[mid]);
-            let temp =  response.data.data[mid];
+            let temp =  response.data.data;
             if (typeof(temp) != "undefined"){
                 _this.audiosrc = temp;
                 _this.playingmid = mid;
