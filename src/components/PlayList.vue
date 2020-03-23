@@ -432,7 +432,7 @@ export default {
     // 以下是播放相关方法
     getAudioUrl(mid){
         var _this = this;
-        this.axios.get('https://mq.api.superboyjack.cn/song/urls', {
+        this.axios.get('https://mq.api.superboyjack.cn/song/url', {
             // /api/song/urls
             // https://mq.api.superboyjack.cn/song/urls
             params: {
