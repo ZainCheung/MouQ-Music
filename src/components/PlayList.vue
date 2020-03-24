@@ -332,8 +332,8 @@ export default {
             link.style.display = 'none'
             link.href = url
             link.setAttribute('download', name + "." + type)
-            link.setAttribute('v-on:click', this.courseDownload(url, name + "." + type));
-            console.log(this.courseDownload(url, name + "." + type));
+            // link.setAttribute('v-on:click', this.courseDownload(url, name + "." + type));
+            // console.log(this.courseDownload(url, name + "." + type));
             document.body.appendChild(link)
             link.click()
         },
