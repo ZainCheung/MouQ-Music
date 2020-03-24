@@ -276,48 +276,48 @@ export default {
      * @param  {String} url 目标文件地址
      * @param  {String} filename 想要保存的文件名称
      */
-    courseDownload(url, filename) {
-        var _this = this;
-        _this.getBlob(url, function(blob) {
-            _this.saveAs(blob, filename);
-        })
-    },
-    getBlob(url,cb) {
-        var xhr = new XMLHttpRequest();
-        xhr.open('GET', url, true);
-        xhr.responseType = 'blob';
-        xhr.onload = function() {
-            if (xhr.status === 200) {
-                cb(xhr.response);
-            }
-        };
-        xhr.send();
-    },
+    // courseDownload(url, filename) {
+    //     var _this = this;
+    //     _this.getBlob(url, function(blob) {
+    //         _this.saveAs(blob, filename);
+    //     })
+    // },
+    // getBlob(url,cb) {
+    //     var xhr = new XMLHttpRequest();
+    //     xhr.open('GET', url, true);
+    //     xhr.responseType = 'blob';
+    //     xhr.onload = function() {
+    //         if (xhr.status === 200) {
+    //             cb(xhr.response);
+    //         }
+    //     };
+    //     xhr.send();
+    // },
     /**
      * 保存
      * @param  {Blob} blob
      * @param  {String} filename 想要保存的文件名称
      */
-    saveAs(blob, filename) {
-        if (window.navigator.msSaveOrOpenBlob) {
-            navigator.msSaveBlob(blob, filename);
-        } else {
-            var link = document.createElement('a');
-            var body = document.querySelector('body');
+    // saveAs(blob, filename) {
+    //     if (window.navigator.msSaveOrOpenBlob) {
+    //         navigator.msSaveBlob(blob, filename);
+    //     } else {
+    //         var link = document.createElement('a');
+    //         var body = document.querySelector('body');
      
-            link.href = window.URL.createObjectURL(blob);
-            link.download = filename;
+    //         link.href = window.URL.createObjectURL(blob);
+    //         link.download = filename;
      
-            // fix Firefox
-            link.style.display = 'none';
-            body.appendChild(link);
+    //         // fix Firefox
+    //         link.style.display = 'none';
+    //         body.appendChild(link);
      
-            link.click();
-            body.removeChild(link);
+    //         link.click();
+    //         body.removeChild(link);
      
-            window.URL.revokeObjectURL(link.href);
-        }
-        },
+    //         window.URL.revokeObjectURL(link.href);
+    //     }
+    //     },
     
     // 根据url下载文件
         downloadFile (url,name,type) {
@@ -361,7 +361,7 @@ export default {
             name = name + "-" + _this.tablesonglist[order].singer;
             if (typeof(response.data.data) != "undefined"){
                 var index = response.data.data.indexOf(".com");
-                var url = response.data.data;
+                var url = response.data.data.replace('http','https');
                 if(index != -1){
                     // 代理内网,打包到electron时时要注释下面这行
                     // url = "/download/" + url.slice(index+5,url.length);
@@ -442,7 +442,7 @@ export default {
         })
         .then(function (response) {
             // console.log(response.data.data[mid]);
-            let temp =  response.data.data;
+            let temp =  response.data.data.replace('http','https');
             if (typeof(temp) != "undefined"){
                 _this.audiosrc = temp;
                 _this.playingmid = mid;
