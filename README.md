@@ -121,8 +121,8 @@ https://i.y.qq.com/n2/m/share/details/taoge.html?ADTAG=newyqq.taoge&id=380560385
 
 ![G1QB8J.png](https://s1.ax1x.com/2020/04/01/G1QB8J.png)
 
-<<<<<<< HEAD
 ![G1Q6Dx.png](https://s1.ax1x.com/2020/04/01/G1Q6Dx.png)
-=======
-![G1Q6Dx.png](https://s1.ax1x.com/2020/04/01/G1Q6Dx.png)
->>>>>>> bd71fe2fbc2aa7a3cbca2a2d52de7826cda48da0
+
+<img src="https://s1.ax1x.com/2020/04/01/G1MCSs.png"
+        height="600" weight="400">
+        
