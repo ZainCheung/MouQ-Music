@@ -16,9 +16,13 @@
 
 ------
 
-牟Q音乐提供QQ音乐歌单的解析，只需要粘贴进正确格式的歌单链接就可以进行解析，然后进行试听及下载操作。
+[:house:Homepage](https://superboyjack.github.io/MouQ-Music/dist)
 
-[TOC]
+牟Q音乐是一款可以解析QQ音乐歌单并下载无损音质的产品，你当然可以把喜欢的歌曲收藏进歌单,然后借助牟Q一次性全部下载到你的电脑或手机,欢迎交流​ ​。:sparkling_heart::sparkling_heart::sparkling_heart:
+
+
+
+# 快速开始
 
 ## 一、歌单链接获取方式：
 
@@ -27,7 +31,7 @@
 
 https://y.qq.com/n/yqq/playlist/3805603854.html
 
-歌单id为 ”/playlist/“ 和 “.html” 之间的数字
+
 
 
 <img src="https://s1.ax1x.com/2020/04/01/G1FZnJ.png"
@@ -40,7 +44,7 @@ https://y.qq.com/n/yqq/playlist/3805603854.html
 
 https://i.y.qq.com/n2/m/share/details/taoge.html?ADTAG=newyqq.taoge&id=3805603854
 
-链接为页面顶部的框框里，歌单id为 ”&id=“ 后面的数字
+
 
 
 <img src="https://s1.ax1x.com/2020/04/01/G1Fm7R.jpg"
@@ -55,7 +59,7 @@ https://i.y.qq.com/n2/m/share/details/taoge.html?ADTAG=newyqq.taoge&id=380560385
 
 [https://i.y.qq.com/n2/m/share/details/taoge.html?platform=11&appshare=android_qq&appversion=9090508&hosteuin=owCk7w-FNe-i7v**&id=3805603854&ADTAG=qfshare](https://i.y.qq.com/n2/m/share/details/taoge.html?platform=11&appshare=android_qq&appversion=9090508&hosteuin=owCk7w-FNe-i7v**&id=3805603854&ADTAG=qfshare)
 
-歌单id为 ”&id=“ 后面的数字
+
 
 
 <img src="https://s1.ax1x.com/2020/04/01/G1Fk1U.jpg"
@@ -73,7 +77,7 @@ https://i.y.qq.com/n2/m/share/details/taoge.html?ADTAG=newyqq.taoge&id=380560385
 
 ### 4.直接输入歌单ID
 
-或者可以直接输入id也可以解析比如：3805603854
+可以直接输入id进行解析，以上三个链接里的ID都为：3805603854
 
 
 
