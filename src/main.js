@@ -17,8 +17,21 @@ Vue.use(VueAxios, axios)
 Vue.use(vueAplayer) 
 Vue.config.productionTip = false
 
+
 // Vue.prototype.HOST='/api'
 new Vue({
   router,
   render: h => h(App)
 }).$mount('#app')
+
+
+// 百度统计
+var _hmt = _hmt || [];
+window._hmt = _hmt; // 修改为window 全局变量
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?215b0bc22df238301a383657d170d476";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+

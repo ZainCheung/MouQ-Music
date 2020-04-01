@@ -49,4 +49,14 @@ const router = new VueRouter({
   routes
 })
 
+// 调用beforeEach方法，保证每个路由跳转时都将其跳转的路由推给百度统计
+router.beforeEach((to, from, next) => {
+  if (window._hmt) {
+    if (to.path) {
+      window._hmt.push(['_trackPageview', '/#' + to.fullPath])
+    }
+  }
+  next()
+})
+
 export default router

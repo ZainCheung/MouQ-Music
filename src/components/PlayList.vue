@@ -2,7 +2,7 @@
   <el-container>
    <el-main>   
   <el-row>
-    <el-col :xs="24" :sm="18" :md="14" :lg="10" id="main">
+    <el-col :xs="24" :sm="18" :md="16" :lg="16" id="main">
     <label>请粘贴某Q音乐歌单链接或者id：</label>
     <el-input v-model="link" v-on:input= "formatLink" @keyup.enter.native="search" clearable placeholder="请输入歌单链接或者id"></el-input>
     <!-- 
@@ -80,6 +80,12 @@
   </el-main>
   
   <el-footer>
+      <el-row>
+        <el-col :xs="24" :sm="18" :md="14" :lg="14" id="main">
+            <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=41152502000110" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img src="https://s1.ax1x.com/2020/03/24/8qhVyj.png" style="float:left;"/><span style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">豫公网安备 41152502000110号</span></a>
+            <a style="display:inline-block;text-decoration:none;height:20px;line-height:20px;" target="_blank" href="http://www.beian.miit.gov.cn"><span style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">豫ICP备19039675号</span></a>
+        </el-col>
+      </el-row>
   </el-footer>
   </el-container>
       <!-- <el-backtop target=".page-component__scroll .el-scrollbar__wrap"></el-backtop> -->
