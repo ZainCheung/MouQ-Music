@@ -371,9 +371,9 @@ export default {
                 if(index != -1){
                     // 代理内网,打包到electron时时要注释下面这行
                     // url = "/download/" + url.slice(index+5,url.length);
-                    _this.downloadFile (url,name,type);
-                    // var FileSaver = require('file-saver');
-                    // FileSaver.saveAs(url, name + '.' + type);
+                    // _this.downloadFile (url,name,type);
+                    var FileSaver = require('file-saver');
+                    FileSaver.saveAs(url, name + '.' + type);
                 }
             }else{
                 _this.$message({
