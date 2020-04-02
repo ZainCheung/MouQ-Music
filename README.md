@@ -20,7 +20,9 @@
 
 牟Q音乐是一款可以解析QQ音乐歌单并下载无损音质的产品，你当然可以把喜欢的歌曲收藏进歌单,然后借助牟Q一次性全部下载到你的电脑或手机,欢迎交流​ ​。:sparkling_heart::sparkling_heart::sparkling_heart:
 
+GitHub: [https://github.com/superBoyJack/MouQ-Music](https://github.com/superBoyJack/MouQ-Music)
 
+在线使用: [牟Q音乐](https://superboyjack.github.io/MouQ-Music/dist/#/)
 
 # 快速开始
 
