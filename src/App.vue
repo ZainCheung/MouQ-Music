@@ -27,6 +27,8 @@
   -moz-osx-font-smoothing: grayscale;
   // 
   color: #2c3e50;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
 }
 
 #nav {
